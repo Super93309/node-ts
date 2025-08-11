@@ -1,0 +1,40 @@
+{
+  "name": "aws-node-ts-app",
+  "version": "1.0.0",
+  "description": "An AWS Node.js application using TypeScript",
+  "main": "dist/src/index.js",
+  "scripts": {
+    "start": "node dist/src/index.js",
+    "build": "tsc",
+    "dev": "ts-node src/index.ts",
+    "clean": "rm -rf dist",
+    "start:dev": "nodemon src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "aws",
+    "typescript",
+    "nodejs"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/multer": "^1.4.12",
+    "@types/node": "^22.7.3",
+    "@types/uuid": "^10.0.0",
+    "nodemon": "^3.1.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2"
+  },
+  "dependencies": {
+    "@aws-sdk/client-cloudwatch-logs": "^3.658.1",
+    "@aws-sdk/client-ec2": "^3.658.1",
+    "@aws-sdk/client-lambda": "^3.659.0",
+    "@aws-sdk/client-s3": "^3.658.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "multer": "1.4.5-lts.1",
+    "uuid": "^10.0.0"
+  }
+}
